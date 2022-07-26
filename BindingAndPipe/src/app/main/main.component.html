@@ -1,0 +1,13 @@
+<input type="text" [disabled]="true" value="{{output}}"/> <br/>
+Number 1<input type="text" [disabled]="status" #num1 > <br/>
+Number 2 <input type="text" [disabled]="status" #num2 > <br/>
+
+<input type="button" value="Add" (click)="doThings(num1.value,num2.value)"/>
+<br/>
+<hr/>
+<br/>
+Cost {{2000|currency:'INR'}} <br/>
+Date {{today|date:'shortDate'}} - {{today|date:'shortTime'}} <br/>
+Marks {{marks | percent:'3.1-3'}}<br/>
+Summary {{summary | uppercase}} <br/>
+Debit Card {{78948|debitcard}}
